@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/styles/new.css">
+</head>
+<body>
+<div class="frame2New">
+    <div class="header">
+        <a class="dropdown" href="main.html">
+            <div class="dropbtn">Home</div>
+        </a>
+        <div class="dropdown">
+            <div class="dropbtn" >Tools</div>
+            <div class="dropdown-content">
+                <a href="#">Track an event</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropbtn">Sharing</div>
+            <div class="dropdown-content">
+                <a href="frame404.html">Articles</a>
+                <a href="frame404.html">Technology</a>
+                <a href="frame404.html">Projects</a>
+                <a href="frame404.html">All others for fun</a>
+            </div>
+        </div>
+        <a class="dropdown" href="frame404.html">
+            <div class="dropbtn">Find me</div>
+        </a>
+        <a class="dropdown" href="frame6.html">
+            <div class="dropbtn">About</div>
+        </a>
+        <div class="loginDiv">
+            <div id="login">Login</div>
+        </div>
+    </div>
+
+    <div class="insideEvolutionDivNew">
+        <div class="titleEvolution">Evolution of Prioritized Dynamic Scheduling Algorithm for HPC</div>
+        <div class="smallText">Open to public: 8/1/2019</div>
+        <div class="smallText">Last updated: 8/7/2019 16:56 KST</div>
+        <div class="smallText">Link style designed by<a class="linkStyle" href="https://html5up.net/">HTML5 UP.</a>
+            Authorized under<a class="linkStyle" href="https://html5up.net/license">CCA 3.0</a>license.</div>
+        <div class="links">
+            <a class="linkStyling" href="#introduction">Introduction</a>
+            <a class="linkStyling" href="#download">Download Source</a>
+            <a class="linkStyling" href="#release">Release details</a>
+            <a class="linkStyling" href="#technical">Technical Requirements</a>
+            <a class="linkStyling" href="#howToInstall">How to install</a>
+            <a class="linkStyling" href="#howToRun">How to run</a>
+        </div>
+        <div id="introduction">
+            <div class="subTitleEvolution">Introduction</div>
+            <div class="smallText">Link style designed by HTML5 UP. Authorized under CCA 3.0 license.</div>
+            <div class="text">The prioritized dynamic approach of high-performance computer scheduling algorithm
+                is a type of HPC scheduling algorithm ("PYSA") which considers the priority of each job requests waiting
+                for execution in an HPC (cluster). Compare with traditional HPC scheduling algorithms and classical PYSA
+                algorithms, our evolution approach cares and actually uses the job priority when generating the job
+                execution sequence. As a result, the job request execution sequence may be out of the pushing order but
+                will have the HPC (cluster) to performance a 50% improvement on overall utility rate and have an overall
+                21% time-saving.</div>
+            <div class="text">All of our approaches go into two branches, FE and LTE. FE stands for Future
+                Evolution, which is the version supports three parameters from the request. However, the LTE version,
+                Long-term Evolution, not the 4G LTE, supports a flexible amount of request's description parameters. In the
+                FE approach, users do not have to define their size of parameter and name of them. The reason is, in FE,
+                we pre-defined that each parameter should contain four general parameters and three technical parameters.
+                General classifiers are RID (Request ID), Pushing Time, Request Priority and Execution Length, and technical
+                variables are CPU, GPU, and Memory. However, in LTE approach, besides four general parameters, users are
+                required to define how many parameters and what they are. The method of definition will be explained below.
+            </div>
+            <div class="text">Other than just the algorithm, we are also providing an algorithm simulation and evaluation
+                method to help developers and future researchers to better understand their newly designed scheduling
+                algorithms by making comparisons between current existing scheduling algorithms. Our simulator and
+                evaluation service can run algorithms coded in any language, no matter if it is C, Java, C++, Python,
+                or even PHP. As long as the operating system does support such language, we are ok with it.</div>
+        </div>
+        <div id="download">
+            <div class="subTitleEvolution">Download</div>
+            <div class="links">
+                <a class="linkStyling" href="../assets/files/file_1.gz" download="file_1.gz">
+                    PYSA-LTE Server Oriented Source</a>
+                <a class="linkStyling" href="../assets/files/file_2.gz" download="file_2.gz">
+                    PYSA-LTE Request Oriented Source</a>
+                <a class="linkStyling" href="../assets/files/file_3.gz" download="file_3.gz">
+                    EVAS-FE Source</a>
+                <a class="linkStyling marginBottom" href="../assets/files/file_4.gz" download="file_4.gz">
+                    EVAS-LTE Source</a>
+            </div>
+
+            <!--            <form method="get" action="file_1.gz">-->
+            <!--                <button type="submit">PYSA-LTE Server Oriented Source</button>-->
+            <!--            </form>-->
+            <div class="text">GitHub source is still private for future researching purpose.</div>
+        </div>
+        <div id="release">
+            <div class="subTitleEvolution">What is included in the release</div>
+            <div class="text">In the current release, we are providing several things. For PYSA, we only offer the LTE
+                version, while the FE edition has archived as a history. We are providing two branches of PYSA-LTE. These
+                two branches are both designed base on the idea of PYSA but are slightly differentiated on how they are
+                doing the placement task.</div>
+            <div class="text">For the simulation and evaluation service, we provide both FE and LTE versions. Don't worry,
+                even if PYSA-FE is not available anymore, EVAS (the evaluation service)-FE has been modified to be adapt
+                with PYSA-LTE.</div>
+        </div>
+        <div id="technical">
+            <div class="subTitleEvolution">Technical requirements</div>
+            <div class="text">Both PYSA-LTE and EVAS family REQUIRES a Unix or Linux system to proper run as expected.
+                In another word, our designs are NOT compatible with Windows family systems, Windows NT, MS-DOS, and any
+                other non-Unix or non-Linux systems. However, for windows users, they can run this program by installing
+                the Windows Subsystem for Linux on their eligible Windows 10 devices.</div>
+            <div class="text">Both PYSA-LTE and EVAS family are optimized for Apple OS X (a.k.a. Apple macOS), Apple Darwin,
+                and Ubuntu because we implemented these programs under OS X and Ubuntu. To be clarified, Apple OS X systems
+                are certified Unix operating systems.</div>
+            <div class="text">To run our programs, we do REQUIRE user's computer to have pre-installed the latest version
+                of GCC, G++, clang, C RT std=c99, C++ RT std=c++11, Python 3, pip3 by Python 3 and Java 10 (Java is
+                recommended but is not required for LTE. Java is required for FE). Programs do have a hardware requirement
+                to run correctly, but we believe current modern personal computers and servers are strong enough to run,
+                so we will not specify the hardware requirements.</div>
+        </div>
+        <div id="howToInstall">
+            <div class="subTitleEvolution">How to install</div>
+            <div class="text">After unpacking the archive, run ./make.sh to freshly compile the program. Then use
+                ./a.out to execute the program. Please note that the program maker and complier DO NOT verify your
+                system runtime environment, please make sure your system is eligible to compile and run programs before
+                you run make.</div>
+        </div>
+        <div id="howToRun">
+            <div class="subTitleEvolution">How to run</div>
+            <div class="text">In this tutorial, we assume all of your executables are called a.out</div>
+        </div>
+        <div class="subTitleEvolution">PYSA Family executables</div>
+        <div class="smallTitleEvolution">Command-line format</div>
+        <div class="text">For all PYSA evolutions, we are expecting you to give an address of a configuration file.
+            The file address is required, or the program will throw an error. Run program as ./a.out < yourConfFile>.
+            For example, you can run your program as ./a.out ./input.conf, if your destinated configuration file is
+            ./input.conf.</div>
+        <div class="smallTitleEvolution">Input file syntax</div>
+        <div class="text">As the inputting configuration file, we are expecting it to have the syntax as shown below:
+        </div>
+        <div class="smallText">para0<span class="spanClass">...</span><span>paraN</span></div>
+        <div class="smallText">para0ClusterCapacity	<span class="spanClass">...</span>	paraNClusterCapacity</div>
+        <div class="smallText">req0Para0Var	<span class="spanClass">...</span>	req0ParaNVar</div>
+        <div class="smallText">...</div>
+        <div class="smallText">...</div>
+        <div class="smallText">reqNPara0Var	<span class="spanClass">...</span>	reqNParaNVar</div>
+        <div class="text">Do not have empty line unless it is the end of the configuration file. Use one (1) tab in
+            between parameters. DO NOT have spaces or tabs before the first parameter. In FE mode, also applied to
+            EVAS, N MUST be greater or equals to 2, for parameter count.</div>
+        <div class="text">For example, a valid configuration file can be:</div>
+        <div class="rowStyle"><span class="tableText">CPU</span><span class="tableText">GPU</span><span class="tableText">MEM</span>
+            <span class="tableText">NTWK</span></div>
+        <div class="rowStyle"><span class="tableText">100</span><span class="tableText">100</span>
+            <span class="tableText">100</span><span class="tableText">100</span>
+            <span class="tableTextLast">123  //The parameter size can be greater than header, but cannot be fewer</span>
+        </div>
+        <div class="rowStyle marginBottom"><span class="tableText">1</span><span class="tableText">1</span>
+            <span class="tableText">1</span>
+            <span class="tableText">1</span> <span class="tableTextLast">//Here you defined your first request</span>
+        </div>
+        <div class="rowStyle"><span class="tableText">2</span><span class="tableText">2</span>
+            <span class="tableText">2</span><span class="tableText">2</span>
+        </div>
+        <div class="subTitleEvolution">EVAS Family executables</div>
+        <div class="text">EVAS is running based on flag, that means, you will need to use flags and options to have the
+            program to work for you.</div>
+        <div class="smallTitleEvolution">Command Syntax General</div>
+        <div class="text">We have a universal command syntax to run the program. Simply, use ./a.out -[flag] [option 0]
+            ... [option N], or ./a.out --[flagLong] [option 0] ... [option N] to use long flags. Please note that,
+            same as all other command-line tools such as gdb, git, and valgrind, in between each element of the command,
+            please use one (1) space to separate. For flags and options, use one (1) dash for short command or two (2)
+            dashes for long command. For example, a valid command can be ./a.out -l or ./a.out --list.</div>
+        <div class="smallTitleEvolution">Register an algorithm</div>
+        <div class="text"><span class="boldText">Syntax: </span> ./a.out -a [algorithmName] [executableDirectory]
+            [executableFileName] or ./a.out --add [algorithmName] [executableDirectory] [executableFileName]. DO NOT
+            use ./ prefix in the executable file name section. Algorithms will be captured and took a picture by EVAS,
+            so you are free to move the algorithm to another directory, even remove it from the disk, without affecting
+            the EVAS recognization.</div>
+        <div class="text marginBottom"><span class="boldText">Example:</span>./a.out -a testAlgorithm ./algorithm alg.out, which
+            means I want to register an algorithm whose name is testAlgorithm, the executable file is located at
+            ./algorithm, and the executable is called alg.out.</div>
+        <div class="smallTitleEvolution">Remove a registered algorithm from the list</div>
+        <div class="text"><span class="boldText">Syntax: </span>./a.out -r [algorithmName] or ./a.out --remove
+            [algorithmName].</div>
+        <div class="text marginBottom"><span class="boldText">Example:</span> ./a.out -r testAlgorithm, which means I want to
+            remove an algorithm which name is testAlgorithm from the list of registered algorithm list.</div>
+        <div class="smallTitleEvolution">Update a registration</div>
+        <div class="text"><span class="boldText">Syntax: </span> ./a.out -u [algorithmName] [executableDirectory]
+            [executableFileName] or ./a.out --add [algorithmName] [executableDirectory] [executableFileName]. DO NOT
+            use ./ prefix in the executable file name section. The to be updated algorithm must be already registered
+            in EVAS. Please use the exact spelling of the registred algorithm, or the program will throw an error. To
+            rename a registered algorithm, please remove it from the list first by using -r flag, and then use -a flag
+            to re-register the algorithm with the new name.</div>
+        <div class="text marginBottom"><span class="boldText">Example:</span>./a.out -u testAlgorithm ./algorithm_new alg_new.out,
+            which means I want to update an algorithm registration which name is testAlgorithm, with the new executable
+            file located at ./algorithm_new, and the executable is called alg_new.out.</div>
+        <div class="smallTitleEvolution">View the registration list</div>
+        <div class="text"><span class="boldText">Exact command:</span>./a.out -l or ./a.out --list</div>
+        <div class="smallTitleEvolution">Comparison</div>
+        <div class="text">The default mode of the comparator will do the comparison and print out only the minimum
+            information, which is essential for developers to understand the simulation execution status and the
+            evaluation result. To get more info regarding the simulation and evaluation, please use an option to re-run
+            the program. Without a specified inputting configuration, EVAS will automatically generate testing cases,
+            but these testing cases are FE-type description only. Users can use multiple options regardless of the
+            sequence. In comparison, please run command:./a.out -c [option 0] ... [option N]. The following section
+            will only talk about options.</div>
+        <div class="italicText">Default mode</div>
+        <div class="text">No options specification required.</div>
+        <div class="italicText">Timing mode</div>
+        <div class="text">-t or --time. The timing mode will also print out the timing statics to show EVAS took how
+            long time to do what process. For example, it can say, "Input conf process used 0.001388 seconds," which
+            means it cost EVAS 0.001388 seconds to capture and process the inputting configuration.</div>
+        <div class="italicText">Ranking mode</div>
+        <div class="text">-r or --rank. This mode will prints out all registered algorithms with their evaluation
+            result, which is the score and ranking of each of the listed algorithms. For example, EVAS can say
+            "Position 1: 19AGA3540729150245413 (a.k.a. s1): 57.000000."</div>
+        <div class="italicText">Detailed mode</div>
+        <div class="text">-d or --detail. In detailed mode, EVAS will print out all of the internal status and
+            temporary objects. i.e., original request list, algorithm execution status map according to its output, and
+            algorithms alter IDs. In the FE version, EVAS can print more things, for example, the original algorithm
+            output.</div>
+        <div class="italicText">Specifying an input source</div>
+        <div class="text">-f=[fileAddress] or --file=[fileAddress]. By specifying a configuration file, EVAS will use
+            the input instead of an auto-generated configuration. By specifying a source, developers can further
+            optimize their algorithms by focusing on their special computing need.</div>
+        <div class="subTitleEvolution">At the end</div>
+        <div class="text marginBottomNew">This is the end of the tutorial. Please contact us if you have any comments, questions or
+            complaints. Thank you, and enjoy your use.</div>
+        <div class="belowDivFrame2">
+            Page ID: 83218ac34c1834c2-5cd33589cf14b0c23abcc5b943946b36-073e4883be681ee903fe957c5aff477cCopyright
+            <span> <img src="../assets/images/Demo.svg" alt=""/></span>  <br/>
+            2016-2023 Yibo.G. All Rights Reserved. Made with <span>
+                <img style="margin-right:5px" src="../assets/images/Heart.svg" alt=""/></span>in Santa Clara, California.
+            Give sincere thanks to the open source community.<br/>
+            Contact: support <span><img style="margin-right:2px" src="../assets/images/Demo.svg" alt=""/></span>
+            at <span><img style="margin-right:2px" src="../assets/images/Demo.svg" alt=""/></span>
+            yg-home.siteYour access info, including but not limited to your IP address, may be recorded.
+        </div>
+    </div>
+</div>
+</body>
+</html>
